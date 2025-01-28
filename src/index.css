@@ -2,7 +2,10 @@
     DEBUG
 ----------------*/
 
-    
+    .bg-white{
+        background-color: white;
+        height: 150px;
+    }
 
 
 
@@ -29,7 +32,7 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -45,6 +48,16 @@ body{
     text-align: center;
 }
 
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #303030ff;
+    text-transform: uppercase;
+}
+
 /*--------------
     HEADER
 ----------------*/
@@ -55,12 +68,16 @@ header{
     position: relative;
 }
 
+.row-header{
+    justify-content: space-around;
+}
+
 .col-left {
-    width: 30%;  
+    width: 20%;  
 }
 
 .col-right{
-    width: 50%;
+    width: 80%;
     align-items: center;
     justify-content: end;
     
@@ -68,15 +85,12 @@ header{
 }
 
 .header-navbar ul{
-    list-style: none;
-    gap: 15px;
-    justify-content: center;
+    gap: 20px;
+    justify-content: flex-end;
 }
 
 .header-navbar a{
-    text-decoration: none;
     color: #303030ff;
-    text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
     
@@ -103,6 +117,45 @@ main{
 main h1{
     color: white;
 }
+
+/*--------------
+   FOOTER
+----------------*/
+
+.footer-top{
+    background-color:#0282faff ;
+    padding: 40px 0;
+}
+
+.footer-nav{
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+}
+
+.footer-nav ul{
+
+   justify-content: space-around;
+}
+
+.footer-nav img {
+    height: 40px;
+}
+
+.footer-nav li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-nav a{
+    font-size: 12px;
+    color: white;
+}
+
+
+
 
 
 

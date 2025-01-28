@@ -3,7 +3,7 @@ export default function Header (){
      <header>
         <div className="container">
            <div className="row-header d-flex">
-              <div className="col-left text-center">
+              <div className="col-left ">
                 <img className="img-fluid" src="../img/dc-logo.png" alt="Logo Dc" />
               </div>
               <div className="col-right d-flex">
