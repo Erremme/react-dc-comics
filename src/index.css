@@ -1,1 +1,98 @@
+/*--------------
+    DEBUG
+----------------*/
+
+    
+
+
+
+
+
+
+
+
+/*--------------
+    GENERAL
+----------------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------
+    COMMONS
+----------------*/
+body{
+    font-family: "Open Sans", serif;  
+    background-color: black; 
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.img-fluid{
+    max-width: 100%;   
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*--------------
+    HEADER
+----------------*/
+header{
+    margin: 12px 0;
+    padding: 12px 0;
+    background-color: white;
+    position: relative;
+}
+
+.col-left {
+    width: 30%;  
+}
+
+.col-right{
+    width: 50%;
+    align-items: center;
+    justify-content: end;
+    
+    
+}
+
+.header-navbar ul{
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+}
+
+.header-navbar a{
+    text-decoration: none;
+    color: #303030ff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    
+}
+
+.line-bar{
+    height: 6px;
+    width: 46px;
+   background-color:#0282faff  ;
+   position: absolute;
+   bottom: 1px; 
+}
+
+.header-navbar .active{
+    color: #0282faff ;
+}
+
+
 
