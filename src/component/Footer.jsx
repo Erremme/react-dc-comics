@@ -1,3 +1,5 @@
+import footerLinks from "../data/footerLinks";
+
 export default function Footer (){
     return (
             <footer>
@@ -20,51 +22,26 @@ export default function Footer (){
                   <div className="container">
                     <div className="footer-center-row d-flex">
                        <div className="col-left d-flex">
-                          <nav>
-                            <h5>DC COMICS</h5>
-                            <ul>
-                              <li><a href="#">Characteres</a></li>
-                              <li><a href="#">Comics</a></li>
-                              <li><a href="#">Movies</a></li>
-                              <li><a href="#">TV</a></li>
-                              <li><a href="#">Games</a></li>
-                              <li><a href="#">Videos</a></li>
-                              <li><a href="#">News</a></li>
-                            </ul>
 
-                             <h5 className="shop">SHOP</h5>
-                             <ul>
-                                <li><a href="#">Shop DC</a></li>
-                                <li><a href="#">Shop DC Collectbles</a></li>
-                              </ul>
-                          </nav>
-                          <nav>
-                             <h5>DC</h5>
-                             <ul>
-                                <li><a href="#">Terms Of Use</a></li>
-                                <li><a href="#">Privacy Policy (New) </a></li>
-                                <li><a href="#">Ad Choices</a></li>
-                                <li><a href="#">advertising</a></li>
-                                <li><a href="#">Jobs</a></li>
-                                <li><a href="#">Subscriptions</a></li>
-                                <li><a href="#">Talent Workshops</a></li>
-                                <li><a href="#">CPSC Certificates</a></li>
-                                <li><a href="#">Ratings</a></li>
-                                <li><a href="#">Shop Help</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                          
-                              </ul>
-                            </nav>
-                            <nav>
-                              <h5>SITES</h5>
-                              <ul>
-                                <li><a href="#">DC</a></li>
-                                <li><a href="#">MAD Magazine</a></li>
-                                <li><a href="#">DC Kids</a></li>
-                                <li><a href="#">DC Universe</a></li>
-                                <li><a href="#">DC Power Visa</a></li>
-                              </ul>
-                            </nav>
+
+                        {footerLinks.map((footerObj)=> {
+                          return (
+                             
+                                <nav key={footerObj.id}>
+                                  <h5>{footerObj.title}</h5>
+                                  <ul>
+                                    {footerObj.links.map((link)=>{
+                                      return(
+                                       <li key={link.id}>
+                                        <a href={link.url}>{link.text}</a>
+                                       </li>
+                                       )
+                                    })}
+                                  </ul>
+                                </nav>
+                            )
+                        })}
+
                       </div> 
                       <div className="col-right">
                          
