@@ -58,6 +58,7 @@ nav a{
     text-transform: uppercase;
 }
 
+
 /*--------------
     HEADER
 ----------------*/
@@ -102,10 +103,9 @@ header{
    bottom: 1px; 
 }
 
-.header-navbar .active{
+a.active{
     color: #0282faff ;
 }
-
 /*--------------
     MAIN
 ----------------*/

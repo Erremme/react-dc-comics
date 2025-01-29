@@ -1,3 +1,5 @@
+import links from "../data/headerLinks";
+
 export default function Header (){
     return(
      <header>
@@ -9,16 +11,14 @@ export default function Header (){
               <div className="col-right d-flex">
                  <nav className="header-navbar">
                     <ul className="d-flex">
-                        <li><a href="#">characters</a></li>
-                        <li><a className="active" href="#">comics</a><div className="line-bar"></div></li>
-                        <li><a href="#">movies</a></li>
-                        <li><a href="#">tv</a></li>
-                        <li><a href="#">games</a></li>
-                        <li><a href="#">collectibles</a></li>
-                        <li><a href="#">videos</a></li>
-                        <li><a href="#">fans</a></li>
-                        <li><a href="#">news</a></li>
-                        <li><a href="#">shop</a></li>
+                       {links.map((link)=> {
+                        return (
+                           <li key={link.id}>
+                              <a href={link.url} className={link.current ? "active" : ""} >{link.text}</a>
+                           </li>
+                            
+                        )
+                       })}
                         
                     </ul>
                  </nav>
