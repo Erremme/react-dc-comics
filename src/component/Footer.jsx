@@ -67,8 +67,30 @@ export default function Footer (){
                             </nav>
                       </div> 
                       <div className="col-right">
-                         <img className="img-fluid" src="../img/dc-logo-bg.png" alt="Logo DC" />
+                         
                         </div>            
+                    </div>
+                  </div>
+                </div>
+                <div className="footer-bottom">
+                  <div className="container">
+                    <div className="row d-flex">
+                      <div className="col-left">
+                        <button> SIGN-UP NOW!</button> 
+                      </div>
+                      <div className="col-right">
+                        <nav className="d-flex ">
+                          <ul className="d-flex">
+                             <li><a href="#">FOLLOW US</a></li>
+                             <li><a href="#"><img src="../img/footer-facebook.png" alt="Logo Facebook" /></a></li>
+                             <li><a href="#"><img src="../img/footer-twitter.png" alt="Logo Facebook" /></a></li>
+                             <li><a href="#"><img src="../img/footer-youtube.png" alt="Logo Facebook" /></a></li>
+                             <li><a href="#"><img src="../img/footer-pinterest.png" alt="Logo Facebook" /></a></li>
+                             <li><a href="#"><img src="../img/footer-periscope.png" alt="Logo Facebook" /></a></li>
+                          </ul>
+                        </nav>
+                      </div>
+
                     </div>
                   </div>
                 </div>

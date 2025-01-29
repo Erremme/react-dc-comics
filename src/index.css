@@ -157,28 +157,24 @@ main h1{
 
 .footer-center{
     background-image: url(../img/footer-bg.jpg);
-    position: relative;
+    background-repeat: no-repeat;  
+
 }
 
 .footer-center .col-left{
     width: 50%;
     gap: 50px;
     padding: 30px 0;
-    flex-wrap: wrap;
+    
 }
 
 .footer-center .col-right{
-    width:  50%;   
+    width:  50%;
+    background-image: url(../img/dc-logo-bg.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;  
 }
-
-.footer-center .col-right > img{
-    position: absolute;
-    max-width: 500px;
-    top: -100px;
-    left: 50%;
-}
-
-
 
 .footer-center h5{
     color: white;
@@ -194,6 +190,47 @@ main h1{
 .footer-center .shop{
     margin-top: 20px;
 }
+
+/*--footer-botton--*/
+
+.footer-bottom{
+    background-color: #303030ff ;
+    padding:  20px 0;
+}
+
+.footer-bottom .col-right{
+    width: 50%;  
+}
+
+.footer-bottom nav{
+    gap: 16px;
+    align-items: center;
+    justify-content: center;   
+}
+
+.footer-bottom ul{
+    gap: 18px;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer-bottom a:first-child  {
+    color:#0279d4ff ;
+    font-weight: 800;
+}
+
+.footer-bottom .col-left{
+    width: 50%;
+}
+
+.footer-bottom .col-left > button{
+    background: transparent;
+    padding: 10px 15px;
+    color: white;
+    border-color:#0279d4ff ;
+    cursor: pointer;
+}
+
 
 
 
