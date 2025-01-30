@@ -28,7 +28,7 @@
 ----------------*/
 body{
     font-family: "Open Sans", serif;  
-    background-color: black; 
+    background-color: #1c1c1cff; 
 }
 
 .container{
@@ -56,6 +56,23 @@ nav a{
     text-decoration: none;
     color: #303030ff;
     text-transform: uppercase;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 8px 38px;
+    text-decoration: none;
+}
+
+.btn.primary{
+    background-color:#0282faff;
+    color: white;
+    border-color:#0282faff;
+}
+
+.btn.secondary{
+    background-color: green;
+    color: white;
 }
 
 
@@ -109,12 +126,59 @@ a.active{
 /*--------------
     MAIN
 ----------------*/
-main{
-    padding: 30px 0;
+
+.section-jumbotron img{
+    width: 100%;
+    height: auto;
+    overflow-y: hidden;
+  
+
 }
-main h1{
+
+.section-comics{
+    padding: 22px 0;
+    background-color: #1c1c1cff;
+    
+}
+.section-comics .row{
+   flex-wrap: wrap; 
+   justify-content: center;
+   gap: 20px;
+
+}
+
+.section-comics .col{
+   width: calc(80% / 6) ; 
+   margin: 12px 0;
+}
+
+.section-comics .card{
+    height: 100%;
+}
+
+.section-comics .card-img{
+   height: auto;
+    width: 100%;
+}
+
+.section-comics .card  img{
+    width: 100%;
+    height: 120px;
+}
+
+.section-comics .card-text h6{
     color: white;
+    margin-top: 8px;
+    text-transform: uppercase;
 }
+
+.microsection-button{
+    margin-top: 20px;
+}
+
+
+
+
 
 /*--------------
    FOOTER
@@ -212,6 +276,7 @@ main h1{
     gap: 18px;
     align-items: center;
     justify-content: end;
+    flex-wrap: wrap;
 }
 
 .footer-bottom a:first-child  {
