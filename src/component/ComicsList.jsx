@@ -5,8 +5,11 @@ import ButtonComponent from "./ButtonComponent";
 export default function ComicsList(){
    return(
     <section className="section-comics">
-    <div className="container ">
+    <div className="container">
         <div className="row d-flex">
+            <div className="current-series">
+                <h4>CURRENT SERIES</h4>
+            </div>
             {comics.map((comic)=>{
                 return(
                         <div className="col" key={comic.id}>

@@ -1,18 +1,3 @@
-/*--------------
-    DEBUG
-----------------*/
-
-    .bg-white{
-        background-color: white;
-        height: 150px;
-    }
-
-
-
-
-
-
-
 
 /*--------------
     GENERAL
@@ -60,19 +45,22 @@ nav a{
 
 .btn {
     cursor: pointer;
-    padding: 8px 38px;
     text-decoration: none;
 }
 
 .btn.primary{
+    padding: 8px 38px;
     background-color:#0282faff;
     color: white;
     border-color:#0282faff;
 }
 
 .btn.secondary{
-    background-color: green;
+    background: transparent;
+    padding: 10px 15px;
     color: white;
+    border-color:#0279d4ff ;
+    cursor: pointer;
 }
 
 
@@ -84,6 +72,8 @@ header{
     padding: 12px 0;
     background-color: white;
     position: relative;
+    position:sticky;
+    z-index: 10;
 }
 
 .row-header{
@@ -127,24 +117,39 @@ a.active{
     MAIN
 ----------------*/
 
-.section-jumbotron img{
-    width: 100%;
-    height: auto;
-    overflow-y: hidden;
-  
+main .current-series{
+    color: white;
+    padding: 6px 16px;
+    background-color:#0282faff  ;
+    position: absolute;
+    top: -40px;
+    left: 0;   
+}
 
+.section-jumbotron{
+   width: 100%;
+   height: 400px;
+   position: relative;  
+}
+
+.section-jumbotron img{
+    max-width: 100%;
+    position: absolute;
+    bottom: -320px ;
+    left:0;
 }
 
 .section-comics{
     padding: 22px 0;
     background-color: #1c1c1cff;
-    
+    position:sticky;
+    z-index: 10;   
 }
+
 .section-comics .row{
    flex-wrap: wrap; 
-   justify-content: center;
-   gap: 20px;
-
+   justify-content: space-between;
+   position: relative;
 }
 
 .section-comics .col{
@@ -177,9 +182,6 @@ a.active{
 }
 
 
-
-
-
 /*--------------
    FOOTER
 ----------------*/
@@ -189,8 +191,7 @@ a.active{
 .footer-top{
     background-color:#0282faff ;
     padding: 40px 0;
-    position: relative;
-    z-index: 10;
+    
 }
 
 .footer-nav{
@@ -288,13 +289,7 @@ a.active{
     width: 50%;
 }
 
-.footer-bottom .col-left > button{
-    background: transparent;
-    padding: 10px 15px;
-    color: white;
-    border-color:#0279d4ff ;
-    cursor: pointer;
-}
+
 
 
 

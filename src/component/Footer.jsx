@@ -1,4 +1,6 @@
 import footerLinks from "../data/footerLinks";
+import ButtonComponent from "./ButtonComponent";
+
 
 export default function Footer (){
     return (
@@ -53,7 +55,8 @@ export default function Footer (){
                   <div className="container">
                     <div className="row d-flex">
                       <div className="col-left">
-                        <button> SIGN-UP NOW!</button> 
+                        <ButtonComponent text="SIGN UP NOW!" type="secondary"  />
+                        
                       </div>
                       <div className="col-right">
                         <nav className="d-flex ">
